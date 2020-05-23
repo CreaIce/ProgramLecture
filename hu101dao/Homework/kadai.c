@@ -9,8 +9,9 @@ scanf("%d", &input);
 
 rem = input % 2;
 
-  if(rem == 1){
-     printf("奇数だお\n");
+  if(rem == 1)
+  {
+    printf("奇数だお\n");
   }
   else if(input == 0){
     printf("０じゃよ\n");
@@ -18,7 +19,6 @@ rem = input % 2;
   else
     printf("偶数だお\n");
  
-
  return 0;
 }
 
