@@ -1,34 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main(void)
 {
     int i;
-    int a;
-    int b[10];
-    int max;
-    
-    srand((unsigned)time(NULL));
-    for (a = i = 1;i <= 10; ++i)
-    {
-        b[i] = rand();
-        printf("%d\n",b[i]);
-        a += b[i];
-    }
+    int a = 0;
+    int b = 0;
 
-    max = b[1];
-
-    for (i = 1; i <= 10; ++i)
+    for (i = 0; i < 10; ++i)
     {
-        if (max < b[i])
+        scanf("%d",&a);
+
+        if (b < a)
         {
-            max = b[i];
+            b = a;
         }
-        
     }
-    
-    printf("%dサイコーーーーーーーッッッ！！！！！\n",max);
+
+    printf("%dサイコーーーーーーーッッッ！！！！！\n",b);
 
     return 0;
 }
