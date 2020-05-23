@@ -36,4 +36,4 @@ int main(void)
     printf("そしてヒグマさん%d体を野に放ちました\n",z);
 
     return 0;
-}    
+} 
