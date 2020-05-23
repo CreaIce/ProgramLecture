@@ -8,36 +8,13 @@ int main(void)
     int k = 0;
     int m = 0;
 
-    printf("Aさんのグループは？\t");
-    scanf("%d",&p[0]);
+    printf("10人をグループ1~3に分けるべし！(入力 1~3)\n");
 
-    printf("Bさんのグループは？\t");
-    scanf("%d",&p[1]);
-
-    printf("Cさんのグループは？\t");
-    scanf("%d",&p[2]);
-
-    printf("Dさんのグループは？\t");
-    scanf("%d",&p[3]);
-
-    printf("Eさんのグループは？\t");
-    scanf("%d",&p[4]);
-
-    printf("Fさんのグループは？\t");
-    scanf("%d",&p[5]);
-
-    printf("Gさんのグループは？\t");
-    scanf("%d",&p[6]);
-
-    printf("Hさんのグループは？\t");
-    scanf("%d",&p[7]);
-
-    printf("Iさんのグループは？\t");
-    scanf("%d",&p[8]);
-
-    printf("Jさんのグループは？\t");
-    scanf("%d",&p[9]);
-
+    for (i = 0; i < 10; ++i)
+    {
+        scanf("%d",&p[i]);
+    }
+    
     for (i = 0; i < 10; ++i)
     {
         if (p[i] == 1)
