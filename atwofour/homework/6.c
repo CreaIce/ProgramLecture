@@ -1,20 +1,22 @@
 #include <stdio.h>
 
+void moji(char[]);
 int main(void)
 {
-    int i;
-    char a,b,c,d,e,f,g,h,j,k,l,m,n,o,p;
-
-    printf("15文字までだぞ～～～～～～？\n");
-
-    scanf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c",&a,&b,&c,&d,&e,&f,&g,&h,&j,&k,&l,&m,&n,&o,&p);
-
-    printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c",a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p);
-
+    char a[32];
+    printf("31文字までだぞ～～～～～～？\n");
+    scanf("%s",a);
+    moji(a);
     return 0;
 }
-
-
+void moji(char a[])
+{
+    int i;
+    for (i = 0;a[i]!='\0';++i)
+    {
+        printf("%c",a[i]);
+    }
+}
 /* 実行結果
  *
  * 15文字までだぞ～～～～～～？
