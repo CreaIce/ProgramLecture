@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(void)
 {
     int p[10];
@@ -14,39 +13,31 @@ int main(void)
     {
         scanf("%d",&p[i]);
     }
-    
+
     for (i = 0; i < 10; ++i)
     {
         if (p[i] == 1)
         {
             j += p[i];
         }
-    }
-    
-    printf("グループ1　%d人\n",j);
-    
-    for (i = 0; i < 10; ++i)
-    {
-        if (p[i] == 2)
+        else if(p[i] == 2)
         {
             k += p[i];
         }
-    }
-    int l = k/2;
-
-    printf("グループ2　%d人\n",l);
-
-    for (i = 0; i < 10; ++i)
-    {
-        if (p[i] == 3)
+        else if(p[i] == 3)
         {
             m += p[i];
         }
+        else
+        {
+            printf("ばーーーーーーーーーーーか\n");
+        }
     }
+    int l = k/2;
     int n = m/3;
-
+    printf("グループ1　%d人\n",j);
+    printf("グループ2　%d人\n",l);
     printf("グループ3　%d人\n",n);
-
     return 0;
 }
 
