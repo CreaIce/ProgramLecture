@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{70ec27b3-8387-4b99-a1d0-d374cc0ff573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{4124f42e-8bab-4bd1-95c2-d85e113b6ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dxlib">
+      <UniqueIdentifier>{a55f8fbd-f0df-4050-8036-da966e8dc2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\libs">
+      <UniqueIdentifier>{96b2cd9e-9116-49ff-819e-448527edec0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\scenes">
+      <UniqueIdentifier>{6a8d324e-054e-445e-af1c-c795fd04f322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\objects">
+      <UniqueIdentifier>{ffdef08e-2644-4765-8e23-7d0914ae7d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\libs\system">
+      <UniqueIdentifier>{6650184d-d0fe-4b09-8ff7-a511cef5a800}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\EntryPoint.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\EntryPoint.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
