@@ -1,4 +1,5 @@
 #include "EntryPoint.h"
+#include "DxLib.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
@@ -9,16 +10,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
     Setting();
 
-    int beforeCount = GetNowCount();
-
-    while (!ProcessMessage() && !CheckHitKey(KEY_INPUT_ESCAPE))
-    {
-        int nowCount = GetNowCount();
-        float deltaTime = (nowCount - beforeCount) / 1000.0f;
-        beforeCount = nowCount;
-
-        Update(deltaTime);
-    }
+    while (!ProcessMessage() && Update());
 
     DxLib_End();            // ＤＸライブラリ使用の終了処理
 
