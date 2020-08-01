@@ -17,13 +17,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         float deltaTime = (nowCount - beforeCount) / 1000.0f;
         beforeCount = nowCount;
 
-        Loop(deltaTime);
-
-        ClearDrawScreen();
-
-        Draw();
-
-        ScreenFlip();
+        Update(deltaTime);
     }
 
     DxLib_End();            // ＤＸライブラリ使用の終了処理

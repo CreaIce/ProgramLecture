@@ -3,5 +3,4 @@
 #include "DxLib.h"
 
 extern void Setting(void);
-extern void Loop(float deltaTime);
-extern void Draw();
+extern void Update(float deltaTime);
