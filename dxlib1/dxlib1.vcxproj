@@ -153,9 +153,13 @@
   <ItemGroup>
     <ClCompile Include="sources\EntryPoint.cpp" />
     <ClCompile Include="sources\main.cpp" />
+    <ClCompile Include="sources\scenes\SceneManager.cpp" />
+    <ClCompile Include="sources\scenes\TestScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sources\EntryPoint.h" />
+    <ClInclude Include="sources\scenes\SceneManager.h" />
+    <ClInclude Include="sources\scenes\TestScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
