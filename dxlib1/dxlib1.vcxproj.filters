@@ -30,6 +30,9 @@
     <ClCompile Include="sources\EntryPoint.cpp">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="sources\objects\Player.cpp">
+      <Filter>sources\objects</Filter>
+    </ClCompile>
     <ClCompile Include="sources\scenes\TestScene.cpp">
       <Filter>sources\scenes</Filter>
     </ClCompile>
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="sources\scenes\SceneManager.h">
       <Filter>sources\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\objects\Player.h">
+      <Filter>sources\objects</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
