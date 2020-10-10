@@ -5,6 +5,12 @@
 
 #include "scenes/TestScene.h"
 
+// ‰Šú‰»ˆ—
+void Init(void)
+{
+    SetGraphMode(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_COLOR);
+}
+
 // ‰Šúİ’è
 void Setting(void)
 {
